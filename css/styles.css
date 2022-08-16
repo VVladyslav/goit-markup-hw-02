@@ -18,14 +18,14 @@ a {
 /* --Глобальнй стиль тексту в елементі/тезі "боді" -- */
 
 body {
-    background: #F5F5F5;
+    background: #fff;
     color: var(--primery-text-color);
     font-family: var(--font-family);
 }
 /* --ХЕДЕР-- */
 /* --Лого двокольорове-- */
 
-.logo {
+.logo-top {
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -34,7 +34,7 @@ body {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
-.logo-studio {
+.logo-top-studio {
     color: #000000;
 }
 /* --Навігація сайту-- */
@@ -44,7 +44,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--scondary-text-color);
+    color: #212121;
 }
 .navigation-item-link:hover,
 .navigation-item-link:focus
@@ -68,6 +68,9 @@ body {
 /* --СТУДІЯ-- */
 /* --Герой-- */
 
+.motto {
+    background-color: #2F303A;
+}
 .motto-text {
     font-weight: 900;
     font-size: 44px;
@@ -140,6 +143,18 @@ body {
 /* --Фільтр портфоліо-- */
 
 .filter-button {
+    /* position: absolute; */
+    width: 125px;
+    height: 38px;
+    left: 593px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
     background-color: #F5F4FA;
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -166,13 +181,30 @@ body {
 }
 /* --ПІДВАЛ-- */
 
+.page-bottom {
+    background-color: #2F303A;
+}
+
+.logo-bottom {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-bottom-studio {
+    color: #fff;
+}
 .footer-adressse {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    /* color: var(--text-color-white); */
+    color: var(--text-color-white);
 }
 .footer-mail,
 .footer-phone {
@@ -181,9 +213,10 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail:hover, .footer-mail:focus,
-.footer-phone:hover, .footer-phone:focus {
+.footer-phone:hover, .footer-phone:focus,
+.footer-adressse:hover, .footer-adressse:focus {
     color: var(--accent-color);
 }
