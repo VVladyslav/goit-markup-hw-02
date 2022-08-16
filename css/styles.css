@@ -15,6 +15,10 @@ ul {
 a {
     text-decoration: none;
 }
+/* --Визначення родини шрифтів для кнопок-- */
+button {
+    font-family: 'Roboto', sans-serif;
+}
 /* --Глобальнй стиль тексту в елементі/тезі "боді" -- */
 
 body {
@@ -92,6 +96,12 @@ body {
     color: var(--text-color-white);
     cursor: pointer;
 }
+.btn-modal-window:hover,
+.btn-modal-window:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px
+}
 /* .btn-modal-window:hover,
 .btn-modal-window:focus {
 } */
@@ -143,11 +153,6 @@ body {
 /* --Фільтр портфоліо-- */
 
 .filter-button {
-    /* position: absolute; */
-    width: 125px;
-    height: 38px;
-    left: 593px;
-    top: 174px;
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
